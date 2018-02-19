@@ -25,6 +25,13 @@ public interface PtmService {
     String topicModeling(Command command);
     
     /**
+     * Triggers topic modeling phase outcome export.
+     * @param command map of input parameters
+     * @return job identifier
+     */
+    String export(Command command);
+    
+    /**
      * Obtains job report.
      * @param jobId job identifier
      * @return job report
